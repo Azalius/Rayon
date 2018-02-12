@@ -35,6 +35,9 @@ float Vecteur3D::Longueur() const {
 void Vecteur3D::Normaliser() {
 	// A FAIRE
 }
+bool Vecteur3D::operator ==(const Vecteur3D &b) const {
+
+}
 
 Vecteur3D Vecteur3D::operator +(const Vecteur3D & v) const {
 	Vecteur3D res;

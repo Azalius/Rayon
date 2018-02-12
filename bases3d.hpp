@@ -109,6 +109,7 @@ public:
 	Vecteur3D operator -(const Vecteur3D &) const; // V3=V1-V2
 	Vecteur3D operator -() const; // V2=-V1
 	Vecteur3D operator *(float) const; // V2=V1.k
+	bool operator ==(const Vecteur3D &b) const;
 	float operator *(const Vecteur3D &) const; // k =V1.V2
 	Vecteur3D Cross(const Vecteur3D &) const; // V3=V1xV2
 
