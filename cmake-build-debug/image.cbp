@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="image"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="image">
+				<Option output="C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/image.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 image"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="image/fast">
+				<Option output="C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/image.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 image/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/bases3d.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/bases3d.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/bitmap.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/bitmap.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/camera.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/camera.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/const.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/couleurRVB.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/couleurRVB.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/intersection.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/intersection.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/liste.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/lumiere.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/lumiere.h">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/pixelmap.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/pixelmap.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/plan.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/plan.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/rayon.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/sphere.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/sphere.hpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/testVec.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
