@@ -42,7 +42,10 @@ float Vecteur3D::Longueur() const {
 }
 
 void Vecteur3D::Normaliser() {
-	// A FAIRE
+    float longeur = Longueur(); // Eviter de le recalculer
+    X(x/Longueur());
+    Y(x/Longueur());
+    Z(z/Longueur());
 }
 
 bool Vecteur3D::operator ==(const Vecteur3D &b) const {
@@ -97,7 +100,9 @@ float Vecteur3D::operator *(const Vecteur3D & v) const {
 Vecteur3D Vecteur3D::Cross(const Vecteur3D & v) const {
 	Vecteur3D res;
 
-	// A FAIRE
+	res.X(y*v.Z()-z*v.Y());
+    res.Y(z*v.X()-x*v.Z());
+    res.Z(x*v.Y()-y*v.Y());
 
 	return res;
 }
@@ -110,9 +115,14 @@ Vecteur3D Vecteur3D::Reflechir(const Vecteur3D & n) const { //TODO
 
 Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const { // TODO
 	Vecteur3D res;
+	float coef = m1/m2;
+    float oldAngle = acos(((*this)*norm)/(Longueur()*norm.Longueur())); // signe?
+    if (sin(oldAngle) > 1/coef){ // refraction totale, mb?
+        return Vecteur3D(0,0,0);
+    }
+    float newAngle = asin(sin(oldAngle) / coef);
 
-	// A FAIRE
-
+    res = sin(newAngle) * norm;
 	return res;
 }
 
