@@ -27,7 +27,7 @@ set(SOURCE_FILES
         rayon.hpp
         sphere.cpp
         sphere.hpp
-        main.cpp
+        tests/testVec.cpp
         )
 
-add_executable(image ${SOURCE_FILES})
+add_executable(test ${SOURCE_FILES})
