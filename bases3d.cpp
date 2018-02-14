@@ -43,9 +43,9 @@ float Vecteur3D::Longueur() const {
 
 void Vecteur3D::Normaliser() {
     float longeur = Longueur(); // Eviter de le recalculer
-    X(x/Longueur());
-    Y(x/Longueur());
-    Z(z/Longueur());
+    X(x/longeur);
+    Y(y/longeur);
+    Z(z/longeur);
 }
 
 bool Vecteur3D::operator ==(const Vecteur3D &b) const {
@@ -102,7 +102,7 @@ Vecteur3D Vecteur3D::Cross(const Vecteur3D & v) const {
 
 	res.X(y*v.Z()-z*v.Y());
     res.Y(z*v.X()-x*v.Z());
-    res.Z(x*v.Y()-y*v.Y());
+    res.Z(x*v.Y()-y*v.X());
 
 	return res;
 }
