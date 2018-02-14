@@ -27,6 +27,8 @@ set(SOURCE_FILES
         rayon.hpp
         sphere.cpp
         sphere.hpp
+        tests/test.cpp
+        tests/test.hpp
         main.cpp
         )
 

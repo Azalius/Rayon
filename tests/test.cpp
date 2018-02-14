@@ -1,9 +1,12 @@
 #include <iostream>
 #include "../bases3d.hpp"
 
+
+
 using namespace std;
 
-int main() {
+
+void TestVec() {
 	Vecteur3D v1 = Vecteur3D(2.0, 2.0, 2.0);
 	Vecteur3D v2 = Vecteur3D(2.0, 0.8, -12.0);
 	Vecteur3D v3 = Vecteur3D(0.0, 0.0, 2.0);
@@ -43,8 +46,6 @@ int main() {
         cout << "*" <<endl;
     }
 
-
-
     v3.Normaliser();
     v4.Normaliser();
     float lv4 = 3.61109402;
@@ -54,4 +55,9 @@ int main() {
     if (!(v4 == Vecteur3D(-3.0/lv4, -2.0/lv4, 0.2/lv4))){
         cout<<"n2"<<endl;
     }
+}
+
+
+void allTest() {
+    TestVec();
 }

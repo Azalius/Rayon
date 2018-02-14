@@ -284,6 +284,33 @@ lumiere.cpp.s:
 	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/lumiere.cpp.s
 .PHONY : lumiere.cpp.s
 
+main.obj: main.cpp.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 pixelmap.obj: pixelmap.cpp.obj
 
 .PHONY : pixelmap.obj
@@ -392,32 +419,32 @@ sphere.cpp.s:
 	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/sphere.cpp.s
 .PHONY : sphere.cpp.s
 
-testVec.obj: testVec.cpp.obj
+tests/test.obj: tests/test.cpp.obj
 
-.PHONY : testVec.obj
+.PHONY : tests/test.obj
 
 # target to build an object file
-testVec.cpp.obj:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/testVec.cpp.obj
-.PHONY : testVec.cpp.obj
+tests/test.cpp.obj:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/test.cpp.obj
+.PHONY : tests/test.cpp.obj
 
-testVec.i: testVec.cpp.i
+tests/test.i: tests/test.cpp.i
 
-.PHONY : testVec.i
+.PHONY : tests/test.i
 
 # target to preprocess a source file
-testVec.cpp.i:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/testVec.cpp.i
-.PHONY : testVec.cpp.i
+tests/test.cpp.i:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
 
-testVec.s: testVec.cpp.s
+tests/test.s: tests/test.cpp.s
 
-.PHONY : testVec.s
+.PHONY : tests/test.s
 
 # target to generate assembly for a file
-testVec.cpp.s:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/testVec.cpp.s
-.PHONY : testVec.cpp.s
+tests/test.cpp.s:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -446,6 +473,9 @@ help:
 	@echo ... lumiere.obj
 	@echo ... lumiere.i
 	@echo ... lumiere.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 	@echo ... pixelmap.obj
 	@echo ... pixelmap.i
 	@echo ... pixelmap.s
@@ -458,9 +488,9 @@ help:
 	@echo ... sphere.obj
 	@echo ... sphere.i
 	@echo ... sphere.s
-	@echo ... testVec.obj
-	@echo ... testVec.i
-	@echo ... testVec.s
+	@echo ... tests/test.obj
+	@echo ... tests/test.i
+	@echo ... tests/test.s
 .PHONY : help
 
 

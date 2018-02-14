@@ -41,6 +41,22 @@ CMakeFiles/image.dir/lumiere.cpp.obj: ../lumiere.h
 CMakeFiles/image.dir/lumiere.cpp.obj: ../objet3D.hpp
 CMakeFiles/image.dir/lumiere.cpp.obj: ../rayon.hpp
 
+CMakeFiles/image.dir/main.cpp.obj: ../bases3d.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../bitmap.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../camera.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../const.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../couleurRVB.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../intersection.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../liste.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../lumiere.h
+CMakeFiles/image.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/image.dir/main.cpp.obj: ../objet3D.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../pixelmap.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../plan.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../rayon.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../sphere.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../tests/test.hpp
+
 CMakeFiles/image.dir/pixelmap.cpp.obj: ../bases3d.hpp
 CMakeFiles/image.dir/pixelmap.cpp.obj: ../bitmap.hpp
 CMakeFiles/image.dir/pixelmap.cpp.obj: ../const.hpp
@@ -78,7 +94,7 @@ CMakeFiles/image.dir/sphere.cpp.obj: ../rayon.hpp
 CMakeFiles/image.dir/sphere.cpp.obj: ../sphere.cpp
 CMakeFiles/image.dir/sphere.cpp.obj: ../sphere.hpp
 
-CMakeFiles/image.dir/testVec.cpp.obj: ../bases3d.hpp
-CMakeFiles/image.dir/testVec.cpp.obj: ../liste.hpp
-CMakeFiles/image.dir/testVec.cpp.obj: ../testVec.cpp
+CMakeFiles/image.dir/tests/test.cpp.obj: ../bases3d.hpp
+CMakeFiles/image.dir/tests/test.cpp.obj: ../liste.hpp
+CMakeFiles/image.dir/tests/test.cpp.obj: ../tests/test.cpp
 

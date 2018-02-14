@@ -94,6 +94,30 @@ C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
 intersection.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/intersection.hpp
 
+C:/Users/Azalius/Documents/Cours/Image/image/main.cpp
+stdio.h
+-
+tests/test.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/tests/test.hpp
+bases3d.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/bases3d.hpp
+plan.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/plan.hpp
+sphere.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/sphere.hpp
+camera.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/camera.hpp
+pixelmap.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/pixelmap.hpp
+intersection.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/intersection.hpp
+lumiere.h
+C:/Users/Azalius/Documents/Cours/Image/image/lumiere.h
+rayon.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
+objet3D.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp
+
 C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp
 couleurRVB.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/couleurRVB.hpp
@@ -172,9 +196,11 @@ C:/Users/Azalius/Documents/Cours/Image/image/intersection.hpp
 objet3D.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp
 
-C:/Users/Azalius/Documents/Cours/Image/image/testVec.cpp
+C:/Users/Azalius/Documents/Cours/Image/image/tests/test.cpp
 iostream
 -
-bases3d.hpp
+../bases3d.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/bases3d.hpp
+
+C:/Users/Azalius/Documents/Cours/Image/image/tests/test.hpp
 

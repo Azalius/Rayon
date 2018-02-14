@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "tests/test.hpp"
 #include "bases3d.hpp"
 #include "plan.hpp"
 #include "sphere.hpp"
@@ -9,7 +10,16 @@
 #include "rayon.hpp"
 #include "objet3D.hpp"
 
+
+#define TEST true
+
+
 int main(void) {
+
+	if (TEST){
+		allTest();
+	}
+
 	// Les lumieres
 	Liste<Lumiere> liste_lumieres;
 	// Les objets
@@ -95,3 +105,7 @@ int main(void) {
 
 	return 0;
 }
+
+
+
+
