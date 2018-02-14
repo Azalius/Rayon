@@ -6,6 +6,5 @@
 #define IMAGE_TEST_HPP
 
 void allTest();
-void TestVec();
 
 #endif //IMAGE_TEST_HPP

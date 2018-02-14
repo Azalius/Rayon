@@ -446,6 +446,33 @@ tests/test.cpp.s:
 	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/test.cpp.s
 .PHONY : tests/test.cpp.s
 
+tests/testVec.obj: tests/testVec.cpp.obj
+
+.PHONY : tests/testVec.obj
+
+# target to build an object file
+tests/testVec.cpp.obj:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/testVec.cpp.obj
+.PHONY : tests/testVec.cpp.obj
+
+tests/testVec.i: tests/testVec.cpp.i
+
+.PHONY : tests/testVec.i
+
+# target to preprocess a source file
+tests/testVec.cpp.i:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/testVec.cpp.i
+.PHONY : tests/testVec.cpp.i
+
+tests/testVec.s: tests/testVec.cpp.s
+
+.PHONY : tests/testVec.s
+
+# target to generate assembly for a file
+tests/testVec.cpp.s:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/testVec.cpp.s
+.PHONY : tests/testVec.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -491,6 +518,9 @@ help:
 	@echo ... tests/test.obj
 	@echo ... tests/test.i
 	@echo ... tests/test.s
+	@echo ... tests/testVec.obj
+	@echo ... tests/testVec.i
+	@echo ... tests/testVec.s
 .PHONY : help
 
 

@@ -9,6 +9,8 @@
 C:/Users/Azalius/Documents/Cours/Image/image/bases3d.cpp
 math.h
 -
+iostream
+-
 bases3d.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/bases3d.hpp
 
@@ -199,8 +201,20 @@ C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/tests/test.cpp
 iostream
 -
+testVec.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.hpp
+
+C:/Users/Azalius/Documents/Cours/Image/image/tests/test.hpp
+
+C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.cpp
+array
+-
+iostream
+-
+testVec.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.hpp
 ../bases3d.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/bases3d.hpp
 
-C:/Users/Azalius/Documents/Cours/Image/image/tests/test.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.hpp
 

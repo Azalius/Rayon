@@ -29,6 +29,8 @@ set(SOURCE_FILES
         sphere.hpp
         tests/test.cpp
         tests/test.hpp
+        tests/testVec.cpp
+        tests/testVec.hpp
         main.cpp
         )
 

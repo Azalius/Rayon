@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/image.dir/rayon.cpp.obj"
   "CMakeFiles/image.dir/sphere.cpp.obj"
   "CMakeFiles/image.dir/tests/test.cpp.obj"
+  "CMakeFiles/image.dir/tests/testVec.cpp.obj"
   "CMakeFiles/image.dir/main.cpp.obj"
   "image.pdb"
   "image.exe"

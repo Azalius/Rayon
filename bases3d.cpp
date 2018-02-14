@@ -1,6 +1,7 @@
 // ce Fichier entier en TODO ?
 
 #include <math.h>
+#include <iostream>
 #include "bases3d.hpp"
 
 Point3D Point3D::operator +(const Vecteur3D & v) const {
@@ -118,19 +119,27 @@ Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const
     Vecteur3D c1;
     Vecteur3D c2;
     Vecteur3D n = Vecteur3D(norm.X(), norm.Y(), norm.Z());
+    float newAngle;
+    float sinNewAngle;
 
     if (n*(*this) < 0){
         n = -n;
     }
 
-	float coef = m1/m2;
+	float coef = m2/m1;
     float oldAngle = acos(((*this)*n)/(Longueur()*n.Longueur())); // signe?
-    if (sin(oldAngle) > 1/coef){ // refraction totale, mb?
+
+    sinNewAngle = sin(oldAngle) / coef;
+    if (sinNewAngle > 1.0){ // refraction totale, mb?
         return Vecteur3D(0,0,0);
     }
-    float newAngle = asin(sin(oldAngle) / coef);
+    newAngle = asin(sinNewAngle);
 
-    c1 = ((*this)+n*cos(oldAngle))*sin(newAngle);
+    //OK jusque la
+    n.Normaliser();
+    Vecteur3D self = Vecteur3D(x, y, z);
+    self.Normaliser();
+    c1 = (self+n*(1/sin(oldAngle)))*sin(newAngle);
     c2 = -n*cos(newAngle);
 
 	return c1 + c2;

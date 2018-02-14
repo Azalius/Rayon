@@ -160,6 +160,12 @@
 		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/test.hpp">
 			<Option target="image"/>
 		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.hpp">
+			<Option target="image"/>
+		</Unit>
 		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

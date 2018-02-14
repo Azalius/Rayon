@@ -94,7 +94,11 @@ CMakeFiles/image.dir/sphere.cpp.obj: ../rayon.hpp
 CMakeFiles/image.dir/sphere.cpp.obj: ../sphere.cpp
 CMakeFiles/image.dir/sphere.cpp.obj: ../sphere.hpp
 
-CMakeFiles/image.dir/tests/test.cpp.obj: ../bases3d.hpp
-CMakeFiles/image.dir/tests/test.cpp.obj: ../liste.hpp
 CMakeFiles/image.dir/tests/test.cpp.obj: ../tests/test.cpp
+CMakeFiles/image.dir/tests/test.cpp.obj: ../tests/testVec.hpp
+
+CMakeFiles/image.dir/tests/testVec.cpp.obj: ../bases3d.hpp
+CMakeFiles/image.dir/tests/testVec.cpp.obj: ../liste.hpp
+CMakeFiles/image.dir/tests/testVec.cpp.obj: ../tests/testVec.cpp
+CMakeFiles/image.dir/tests/testVec.cpp.obj: ../tests/testVec.hpp
 
