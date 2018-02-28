@@ -13,9 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="05347423-4d25-4756-acb6-1246fe701413" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/const.hpp" afterPath="$PROJECT_DIR$/const.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rayon.cpp" afterPath="$PROJECT_DIR$/rayon.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sphere.cpp" afterPath="$PROJECT_DIR$/sphere.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -310,7 +307,7 @@
       <workItem from="1518549570892" duration="5385000" />
       <workItem from="1518607305920" duration="9474000" />
       <workItem from="1519328367155" duration="1356000" />
-      <workItem from="1519822818391" duration="5326000" />
+      <workItem from="1519822818391" duration="5348000" />
     </task>
     <task id="LOCAL-00001" summary="vecteur OK des test a reajouter et a faire passer">
       <created>1518554676854</created>
@@ -340,11 +337,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518618898836</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="++ de tuc surtout la speher">
+      <created>1519828315090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519828315090</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26043000" />
+    <option name="totallyTimeSpent" value="26065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1499" y="0" width="1712" height="1811" extended-state="0" />
@@ -379,7 +383,8 @@
     <MESSAGE value="possible de tester" />
     <MESSAGE value="tous OK sauf refract ? certain test passent pas mais sont bon" />
     <MESSAGE value="en cours de faire marcher la refraction" />
-    <option name="LAST_COMMIT_MESSAGE" value="en cours de faire marcher la refraction" />
+    <MESSAGE value="++ de tuc surtout la speher" />
+    <option name="LAST_COMMIT_MESSAGE" value="++ de tuc surtout la speher" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
