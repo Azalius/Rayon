@@ -21,6 +21,11 @@ public:
 	Rayon() {
 		milieu = 1;
 	}
+	Rayon(Point3D ori, Vecteur3D vec, float mil){
+		vect = vec;
+		orig = ori;
+		milieu = mil;
+	}
 
 	// Lecture
 	Point3D Orig() const {

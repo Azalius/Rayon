@@ -13,6 +13,11 @@ void Camera::Haut(const Vecteur3D & h) {
 
 void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> & ll, int complexite) const {
 
-	// A FAIRE
+	for (int i  = 0 ; i < pm.Hauteur() ; i++){
+		for (int j ; j < pm.Largeur() ; j++){
+			Rayon r = Rayon(); //todo
+			RVB coul = r.Lancer(lo, ll, 0);
+		}
+	}
 
 }
