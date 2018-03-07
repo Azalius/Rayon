@@ -26,6 +26,10 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
 
 	C_Liste_Intersection *lu = new C_Liste_Intersection;
 	this->Intersections(*lu, lo);
+
+    if (lu->Vide()){
+        return RVB(0, 0, 0);
+    }
     Objet3D colObj = *lu->Premier()->Objt();
 
     Rayon reflechi = Rayon(, lu->Premier()->Norm().Reflechir(this->Vect()), colObj.Milieu1());
@@ -34,8 +38,6 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
     refr = refracte.Lancer(lo, ll, recur + 1) * colObj.Kt();
 
     //ToFinir
-
-
 
     if (recur == 0){
         return refr + refl + colObj.Ambiante();
