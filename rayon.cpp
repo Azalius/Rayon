@@ -30,17 +30,24 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
     if (lu->Vide()){
         return RVB(0, 0, 0);
     }
-    Objet3D colObj = *lu->Premier()->Objt();
+    Objet3D *colObj = lu->Premier()->Objt();
 
-    Rayon reflechi = Rayon(, lu->Premier()->Norm().Reflechir(this->Vect()), colObj.Milieu1());
-    refl = reflechi.Lancer(lo, ll, recur + 1) * colObj.Kr();
-    Rayon refracte = Rayon(, lu->Premier()->Norm().Refracter(this->Vect(), colObj.Milieu1(), colObj.Milieu2()), colObj.Milieu2());
-    refr = refracte.Lancer(lo, ll, recur + 1) * colObj.Kt();
+    //Appel recursif sur la premiére intersection
+    Rayon reflechi = Rayon(colObj->interPoint(*this), lu->Premier()->Norm().Reflechir(this->Vect()), colObj->Milieu1());
+    refl = reflechi.Lancer(lo, ll, recur + 1) * colObj->Kr();
+    Rayon refracte = Rayon(colObj->interPoint(*this), lu->Premier()->Norm().Refracter(this->Vect(), colObj->Milieu1(), colObj->Milieu2()), colObj->Milieu2());
+    refr = refracte.Lancer(lo, ll, recur + 1) * colObj->Kt();
 
-    //ToFinir
+    //Verifie si eclairage d'une lumiére
+    Lumiere *enCours = ll.Premier();
+    RVB ilumDirect = RVB();
+    while (enCours != ll.Dernier()){
+        ilumDirect += enCours->Illumination(*this, *lu->Premier(), colObj->interPoint(*this), lo);
+        enCours = ll.Suivant();
+    }
 
     if (recur == 0){
-        return refr + refl + colObj.Ambiante();
+        return refr + refl + colObj->Ambiante();
     }
 	return refr + refl;
 }

@@ -20,7 +20,7 @@ void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> &
     axeY.Normaliser(); // correspond à la hauteur
     axeZ.Normaliser(); // correspond a la largeur
 	for (int i  = 0 ; i < pm.Hauteur() ; i++){
-		for (int j ; j < pm.Largeur() ; j++){
+		for (int j = 0; j < pm.Largeur() ; j++){
             Vecteur3D dire = Vecteur3D();
             dire = this->dir;
             dire = dire + axeY * (i - pm.Hauteur()/2);

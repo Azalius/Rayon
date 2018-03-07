@@ -70,7 +70,7 @@ class Objet3D
 
   // Methodes
   virtual int Intersection(const Rayon &,C_Liste_Intersection &) = 0;
-  virtual Point3D	interPoint(Rayon r);
+  virtual Point3D	interPoint(Rayon r) = 0;
 };
 
 
