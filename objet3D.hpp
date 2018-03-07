@@ -76,11 +76,11 @@ class Objet3D
 		  if (this->Intersection(r, liste)) {
 			  float dist = INFINITY;
 			  for (liste.Premier(); liste.Courant() != 0; liste.Suivant()) {
-				  if (liste.Courant()->Dist < dist) {
-					  dist = liste.Courant->Dist;
+				  if (liste.Courant()->Dist() < dist) {
+					  dist = liste.Courant->Dist();
 				  }
 			  }
-			  res = r.Orig + (r.Vect()*dist);
+			  res = r.Orig() + (r.Vect()*dist);
 		  }
 		  return res;
 	  }
