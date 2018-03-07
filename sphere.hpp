@@ -39,6 +39,7 @@ public:
 
 	Vecteur3D Normale(const Point3D &) const;
 	int Intersection(const Rayon &, C_Liste_Intersection &);
+	Point3D	interPoint(Rayon r);
 };
 
 #endif
