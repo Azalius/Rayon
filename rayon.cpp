@@ -1,4 +1,5 @@
 #include <limits>
+#include <iostream>
 #include "rayon.hpp"
 #include "objet3D.hpp"
 #include "lumiere.h"
@@ -20,35 +21,46 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
     RVB refr;
     RVB refl;
 
+    return RVB(0.5, 0.5, 0.5);
+
 	if (recur > MAX_RECUR || lo.Vide() || ll.Vide()){
-		return RVB(0,0,0);
+		return RVB(0,0.5,0);
 	}
 
 	C_Liste_Intersection *lu = new C_Liste_Intersection;
 	this->Intersections(*lu, lo);
 
     if (lu->Vide()){
-        return RVB(0, 0, 0);
+        //std::cout<<"No collide"<<std::endl;
+        return RVB(0.5, 0, 0);
+    }
+    else{
+        //std::cout<<"Collide"<<std::endl;
     }
     Objet3D *colObj = lu->Premier()->Objt();
 
     //Appel recursif sur la premiére intersection
     Rayon reflechi = Rayon(colObj->interPoint(*this), lu->Premier()->Norm().Reflechir(this->Vect()), colObj->Milieu1());
     refl = reflechi.Lancer(lo, ll, recur + 1) * colObj->Kr();
+    //std::cout<<"Rayon reflechi : "<<reflechi.Vect().X()<<" "<<reflechi.Vect().Y()<<" "<<reflechi.Vect().Z() <<std::endl;
     Rayon refracte = Rayon(colObj->interPoint(*this), lu->Premier()->Norm().Refracter(this->Vect(), colObj->Milieu1(), colObj->Milieu2()), colObj->Milieu2());
     refr = refracte.Lancer(lo, ll, recur + 1) * colObj->Kt();
+    //std::cout<<"Rayon refracte : "<<refracte.Vect().X()<<" "<<refracte.Vect().Y()<<" "<<refracte.Vect().Z() <<std::endl;
 
     //Verifie si eclairage d'une lumiére
     Lumiere *enCours = ll.Premier();
     RVB ilumDirect = RVB();
-    while (enCours != ll.Dernier()){
+    for (int i = 0 ; i < ll.Nb_item() ; i++){
         ilumDirect += enCours->Illumination(*this, *lu->Premier(), colObj->interPoint(*this), lo);
         enCours = ll.Suivant();
     }
 
     if (recur == 0){
-        return refr + refl + colObj->Ambiante();
+        return refr + refl + ilumDirect + colObj->Ambiante();
     }
-	return refr + refl;
+    if (refl.B()+refl.R()+refl.V() != 0){
+        //std::cout<<"Im trying"<<std::endl;
+    }
+	return refr + refl + ilumDirect;
 }
 

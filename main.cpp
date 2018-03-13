@@ -11,7 +11,7 @@
 #include "objet3D.hpp"
 
 
-#define TEST true
+#define TEST false
 
 
 int main(void) {
