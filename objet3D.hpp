@@ -70,7 +70,21 @@ class Objet3D
 
   // Methodes
   virtual int Intersection(const Rayon &,C_Liste_Intersection &) = 0;
-  virtual Point3D	interPoint(Rayon r) = 0;
+    Point3D	Objet3D::interPoint(Rayon r) {
+		  C_Liste_Intersection liste;
+		  Point3D res = Point3D();
+		  if (this->Intersection(r, liste)) {
+			  float dist = INFINITY;
+			  for (liste.Premier(); liste.Courant() != 0; liste.Suivant()) {
+				  if (liste.Courant()->Dist() < dist) {
+					  dist = liste.Courant->Dist();
+				  }
+			  }
+			  res = r.Orig() + (r.Vect()*dist);
+		  }
+		  return res;
+	  }
+};
 };
 
 
