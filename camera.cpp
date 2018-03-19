@@ -40,8 +40,6 @@ void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> &
     index = 0;
     for (y = 0; y < pm.Hauteur(); y++) {
         for (x = 0; x < pm.Largeur(); x++) {
-            /*
-            std::cout<<pm.Largeur()<<std::endl;
             // On calcule la position dans l'espace de ce point
             pt = hg + (droite * (dx * x)) - (haut * (dy * y));
 
@@ -50,13 +48,12 @@ void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> &
             vect = pt - foyer;
             vect.Normaliser();
             ray.Vect(vect);
-            ray.Milieu(1); // Cette supposition n'est pas toujours vraie
+            ray.Milieu(1); /* Cette supposition n'est pas toujours vraie */
 
             // Et on enregistre la couleur du rayon dans l'image
-             RVB couleur = ray.Lancer(lo, ll, complexite);
-            */
-            pm.Map(index++, RVB(0,0,1));
+            pm.Map(index++, ray.Lancer(lo, ll, 0));
         }
         printf("Ligne %d traitee\n", y);
     }
 }
+

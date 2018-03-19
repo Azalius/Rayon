@@ -21,11 +21,17 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
     RVB refr;
     RVB refl;
 
-    return RVB(0.5, 0.5, 0.5);
+    if (lo.Vide()){
+        std::cout<<"no objects"<<std::endl;
+    }
+    if (ll.Vide()){
+        std::cout<<"no lights"<<std::endl;
+    }
 
-	if (recur > MAX_RECUR || lo.Vide() || ll.Vide()){
-		return RVB(0,0.5,0);
+	if (recur > 4 || lo.Vide() || ll.Vide()){
+		return RVB(0,0.5,0.5);
 	}
+    std::cout<<"ima try"<<std::endl;
 
 	C_Liste_Intersection *lu = new C_Liste_Intersection;
 	this->Intersections(*lu, lo);

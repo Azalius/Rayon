@@ -49,6 +49,8 @@ rayon.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
 stdio.h
 -
+iostream
+-
 
 C:/Users/Azalius/Documents/Cours/Image/image/camera.hpp
 const.hpp
@@ -127,6 +129,8 @@ rayon.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
 intersection.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/intersection.hpp
+limits
+-
 
 C:/Users/Azalius/Documents/Cours/Image/image/pixelmap.cpp
 math.h
@@ -166,6 +170,8 @@ C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
 
 C:/Users/Azalius/Documents/Cours/Image/image/rayon.cpp
 limits
+-
+iostream
 -
 rayon.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
