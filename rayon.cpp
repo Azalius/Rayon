@@ -21,28 +21,17 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
     RVB refr;
     RVB refl;
 
-    if (lo.Vide()){
-        std::cout<<"no objects"<<std::endl;
-    }
-    if (ll.Vide()){
-        std::cout<<"no lights"<<std::endl;
-    }
-
-	if (recur > 4 || lo.Vide() || ll.Vide()){
-		return RVB(0,0.5,0.5);
+	if (recur > MAX_RECUR || lo.Vide() || ll.Vide()){
+		return RVB(0,0,0);
 	}
-    std::cout<<"ima try"<<std::endl;
 
 	C_Liste_Intersection *lu = new C_Liste_Intersection;
 	this->Intersections(*lu, lo);
 
     if (lu->Vide()){
-        //std::cout<<"No collide"<<std::endl;
-        return RVB(0.5, 0, 0);
+        return RVB(0, 0, 0);
     }
-    else{
-        //std::cout<<"Collide"<<std::endl;
-    }
+
     Objet3D *colObj = lu->Premier()->Objt();
 
     //Appel recursif sur la premiére intersection
@@ -58,15 +47,13 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
     RVB ilumDirect = RVB();
     for (int i = 0 ; i < ll.Nb_item() ; i++){
         ilumDirect += enCours->Illumination(*this, *lu->Premier(), colObj->interPoint(*this), lo);
+
         enCours = ll.Suivant();
     }
 
     if (recur == 0){
-        return refr + refl + ilumDirect + colObj->Ambiante();
+        return refr + refl ;
     }
-    if (refl.B()+refl.R()+refl.V() != 0){
-        //std::cout<<"Im trying"<<std::endl;
-    }
-	return refr + refl + ilumDirect;
+	return refr + refl + ilumDirect*colObj->Couleur();
 }
 

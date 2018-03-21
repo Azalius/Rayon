@@ -1,4 +1,5 @@
 #include <math.h>
+#include <cmath>
 
 #include "lumiere.h"
 #include "couleurRVB.hpp"
@@ -16,6 +17,7 @@ RVB Lumiere_Ambiante::Illumination(const Rayon &, const Intersection3D & i, cons
 
 RVB Lumiere_Ponctuelle::Illumination(const Rayon & r, const Intersection3D & i, const Point3D & p, Liste<Objet3D> & lo) const {
 
-    return RVB(0, 0, 0.5);
+	return RVB(1, 1, 1)* acos(i.Norm()*r.Vect());
+
 }
 
