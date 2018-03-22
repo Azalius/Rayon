@@ -8,7 +8,6 @@ typedef unsigned int dword;
 // CONSTANTES
 
 #define EPSILON 0.001
-#define MAX_RECUR 4
 
 
 #endif

@@ -83,6 +83,10 @@ C:/Users/Azalius/Documents/Cours/Image/image/liste.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/lumiere.cpp
 math.h
 -
+cmath
+-
+iostream
+-
 lumiere.h
 C:/Users/Azalius/Documents/Cours/Image/image/lumiere.h
 couleurRVB.hpp

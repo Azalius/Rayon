@@ -51,7 +51,7 @@ void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> &
             ray.Milieu(1); /* Cette supposition n'est pas toujours vraie */
 
             // Et on enregistre la couleur du rayon dans l'image
-            pm.Map(index++, ray.Lancer(lo, ll, 0));
+            pm.Map(index++, ray.Lancer(lo, ll, complexite));
         }
         printf("Ligne %d traitee\n", y);
     }

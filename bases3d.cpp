@@ -110,10 +110,23 @@ Vecteur3D Vecteur3D::Cross(const Vecteur3D & v) const {
 
 Vecteur3D Vecteur3D::Reflechir(const Vecteur3D & n) const { //TODO
 	Vecteur3D res = (*this) - (n * (2 * (n * (*this))));
-
 	return res;
 }
 
+
+Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const {
+	Vecteur3D res;
+
+	float i = acos((*this * norm) / (Longueur() * norm.Longueur()));
+	float r = asin((m1*sin(i))/m2);
+
+	Vecteur3D M = (norm * cos(i) - (*this)) * (1/sin(i));
+
+	res = norm * cos(r) + M * sin(r);
+
+	return res;
+}
+/*
 Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const { // TODO
 
     Vecteur3D c1;
@@ -144,19 +157,7 @@ Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const
 
 	return c1 + c2;
 }
-/*
-Vec3f refract(const Vec3f &I, const Vec3f &N, const float &ior)
-{
-    float cosi = clamp(-1, 1, I.dotProduct(N));
-    float etai = 1, etat = ior;
-    Vec3f n = N;
-    if (cosi < 0) { cosi = -cosi; } else { std::swap(etai, etat); n= -N; }
-    float eta = etai / etat;
-    float k = 1 - eta * eta * (1 - cosi * cosi);
-    return k < 0 ? 0 : eta * I + (eta * cosi - sqrtf(k)) * n;
-}
- */
-
+*/
 
 
 

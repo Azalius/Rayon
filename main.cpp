@@ -11,7 +11,7 @@
 #include "objet3D.hpp"
 
 
-#define TEST false
+#define TEST true
 
 
 int main(void) {
@@ -42,12 +42,7 @@ int main(void) {
 
 	// Initialisation des objets==============================
 
-	// Le plan horizontal : le sol
-	Plan sol;
-	sol.depuisVetP(Vecteur3D(0, 1, 0), Point3D(0, 0, 0));
-	sol.Couleur(RVB(0.75, 1, 0.75));
-	sol.Reflexion(0.6);
-	lisobj.Ajouter(&sol);
+
 
 	// Le plan vertical : le mur
 	Plan mur;
@@ -56,21 +51,6 @@ int main(void) {
 	mur.Ambiante(0.1);
 	mur.Reflexion(0.0);
 	lisobj.Ajouter(&mur);
-
-	// La moyenne sphere
-	Sphere spher1;
-	spher1.Centre(Point3D(2.5, 4, 0));
-	spher1.SphereRayon(2);
-	spher1.Couleur(RVB(0.75, 0.75, 1));
-	spher1.Transparence(0);
-	spher1.Milieu_int(1);
-	spher1.Reflexion(0);
-	spher1.Speculaire(RVB(1,0,1));
-	spher1.Ks(0.6);
-	spher1.Diffuse(RVB(1,0,1));
-	spher1.Kd(0.8);
-	spher1.Ka(0.3);
-	lisobj.Ajouter(&spher1);
 
 	// La grosse sphere
 	Sphere spher2;
@@ -90,6 +70,21 @@ int main(void) {
 	spher3.Milieu_int(1.5);
 	lisobj.Ajouter(&spher3);
 
+    // La moyenne sphere
+    Sphere spher1;
+    spher1.Centre(Point3D(2.5, 4, 0));
+    spher1.SphereRayon(2);
+    spher1.Couleur(RVB(0.75, 0.75, 1));
+    spher1.Transparence(0);
+    spher1.Milieu_int(1);
+    spher1.Reflexion(0);
+    spher1.Speculaire(RVB(1,0,1));
+    spher1.Ks(0.6);
+    spher1.Diffuse(RVB(1,0,1));
+    spher1.Kd(0.8);
+    spher1.Ka(0.3);
+    lisobj.Ajouter(&spher1);
+
 	// la Camera
 	Camera cam;
 	cam.Centre(Point3D(0, 5, 12));
@@ -98,7 +93,14 @@ int main(void) {
 	cam.Largeur((5.6 * 513) / 384);
 	cam.Hauteur(5.6);
 
-	cam.Calculer_image(pixmap, lisobj, liste_lumieres, 20);
+	// Le plan horizontal : le sol
+	Plan sol;
+	sol.depuisVetP(Vecteur3D(0, 1, 0), Point3D(0, 0, 0));
+	sol.Couleur(RVB(0.75, 1, 0.75));
+	sol.Reflexion(0.6);
+	lisobj.Ajouter(&sol);
+
+	cam.Calculer_image(pixmap, lisobj, liste_lumieres, 3);
 
 	pixmap.Transferer(bitmap);
 	bitmap.Enregistrer("image.bmp");
