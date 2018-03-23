@@ -13,6 +13,15 @@ Point3D Point3D::operator +(const Vecteur3D & v) const {
 
 	return res;
 }
+Point3D Point3D::operator *(const float f) const {
+	Point3D res;
+
+	res.X(x *f);
+	res.Y(y *f);
+	res.Z(z *f);
+
+	return res;
+}
 
 Point3D Point3D::operator -(const Vecteur3D & v) const {
 	Point3D res;

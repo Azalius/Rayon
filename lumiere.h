@@ -51,4 +51,29 @@ public:
 	RVB Illumination(const Rayon &, const Intersection3D &, const Point3D &, Liste<Objet3D> &) const;
 };
 
+// Plusieurs lumiéres en 'cube' autour du centre
+class Lumiere_Smooth: public Lumiere_Ponctuelle {
+protected:
+	//longeur du cube-lumiére
+	float width = 1;
+
+	// 3**nbLums lumiere seront crées
+	int nbLums = 1; // initilalié comme une ponctuelle, avec une seule lumiére.
+public:
+	void Width(float width){
+		this->width = width;
+	}
+	float Width(){
+		return this->width;
+	}
+	void NbLums(int nblum){
+		this->nbLums = nblum;
+	}
+	int NbLums(){
+		return this->nbLums;
+	}
+
+	RVB Illumination(const Rayon &, const Intersection3D &, const Point3D &, Liste<Objet3D> &) const;
+};
+
 #endif

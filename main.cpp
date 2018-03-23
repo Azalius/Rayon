@@ -35,9 +35,11 @@ int main(void) {
 	ambiante.Couleur(RVB(0.1, 0.1, 0.1));
 	liste_lumieres.Ajouter(&ambiante);
 
-	Lumiere_Ponctuelle ponctuelle;
+	Lumiere_Smooth ponctuelle;
 	ponctuelle.Couleur(RVB(0.9, 0.9, 0.9));
 	ponctuelle.Pos(Point3D(-1, 40, 10));
+    ponctuelle.NbLums(3);
+    ponctuelle.Width(3);
 	liste_lumieres.Ajouter(&ponctuelle);
 
 	// Initialisation des objets==============================

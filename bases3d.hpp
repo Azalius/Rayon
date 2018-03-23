@@ -45,6 +45,7 @@ public:
 
 	Point3D operator +(const Vecteur3D &) const; // P2=P1+V
 	Point3D operator -(const Vecteur3D &) const; // P2=P1-V
+	Point3D operator *(const float f) const; // P2=P1-V
 	Vecteur3D operator -(const Point3D &) const; // V =P2-P1
 	bool operator ==(const Point3D &b) const;
 
