@@ -12,7 +12,7 @@ void Camera::Haut(const Vecteur3D & h) {
 		haut.Normaliser();
 }
 
-void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> & ll, int complexite) const {
+void Camera::Calculer_image(Pixelmap pm, Liste<Objet3D> lo, Liste<Lumiere> ll, int complexite, bool outputText) const {
     Point3D foyer; // Foyer optique de la camera
     Vecteur3D droite; // Vecteur partant sur la droite dans le plan de l'ecran
     float dx, dy; // dimension des macro-pixels
@@ -53,7 +53,9 @@ void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> &
             // Et on enregistre la couleur du rayon dans l'image
             pm.Map(index++, ray.Lancer(lo, ll, complexite));
         }
-        printf("Ligne %d traitee\n", y);
+        if (outputText){
+            std::cout<<y/pm.Hauteur()*100.0<< "% fini";
+        }
     }
 }
 

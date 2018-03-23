@@ -51,6 +51,8 @@ public:
 	RVB Illumination(const Rayon &, const Intersection3D &, const Point3D &, Liste<Objet3D> &) const;
 
 	C_Liste_Intersection getIntersection(const Point3D &p, Liste<Objet3D> &lo, const Vecteur3D &vectIncidentNormalise) const;
+
+	float getCoef(Vecteur3D i, const Vecteur3D &vectIncident) const;
 };
 
 // Plusieurs lumiéres en 'cube' autour du centre pour plus de smoothness

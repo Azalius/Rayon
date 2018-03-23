@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Azalius/Documents/Cours/Image/image/plan.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/plan.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/rayon.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/rayon.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/sphere.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/sphere.cpp.obj"
+  "C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/tests/Scenario.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/tests/test.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/tests/test.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/tests/testVec.cpp.obj"
   )

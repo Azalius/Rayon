@@ -419,6 +419,33 @@ sphere.cpp.s:
 	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/sphere.cpp.s
 .PHONY : sphere.cpp.s
 
+tests/Scenario.obj: tests/Scenario.cpp.obj
+
+.PHONY : tests/Scenario.obj
+
+# target to build an object file
+tests/Scenario.cpp.obj:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Scenario.cpp.obj
+.PHONY : tests/Scenario.cpp.obj
+
+tests/Scenario.i: tests/Scenario.cpp.i
+
+.PHONY : tests/Scenario.i
+
+# target to preprocess a source file
+tests/Scenario.cpp.i:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Scenario.cpp.i
+.PHONY : tests/Scenario.cpp.i
+
+tests/Scenario.s: tests/Scenario.cpp.s
+
+.PHONY : tests/Scenario.s
+
+# target to generate assembly for a file
+tests/Scenario.cpp.s:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Scenario.cpp.s
+.PHONY : tests/Scenario.cpp.s
+
 tests/test.obj: tests/test.cpp.obj
 
 .PHONY : tests/test.obj
@@ -515,6 +542,9 @@ help:
 	@echo ... sphere.obj
 	@echo ... sphere.i
 	@echo ... sphere.s
+	@echo ... tests/Scenario.obj
+	@echo ... tests/Scenario.i
+	@echo ... tests/Scenario.s
 	@echo ... tests/test.obj
 	@echo ... tests/test.i
 	@echo ... tests/test.s

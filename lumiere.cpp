@@ -28,13 +28,13 @@ RVB Lumiere_Ponctuelle::Illumination(const Rayon & r, const Intersection3D & i, 
         }
     }
 
-    float coef = vectIncident* i.Norm();
 
-    return  this->couleur * coef;
+    return this->couleur * getCoef(i.Norm(), vectIncident);
 }
 
-C_Liste_Intersection
-Lumiere_Ponctuelle::getIntersection(const Point3D &p, Liste<Objet3D> &lo, const Vecteur3D &vectIncidentNormalise) const {
+float Lumiere_Ponctuelle::getCoef(Vecteur3D i, const Vecteur3D &vectIncident) const { return (vectIncident * i); }
+
+C_Liste_Intersection Lumiere_Ponctuelle::getIntersection(const Point3D &p, Liste<Objet3D> &lo, const Vecteur3D &vectIncidentNormalise) const {
     Rayon rayon;
     rayon.Orig(p);
     rayon.Vect(vectIncidentNormalise);
@@ -67,8 +67,7 @@ RVB Lumiere_Smooth::Illumination(const Rayon &r, const Intersection3D &inte, con
                     }
                 }
                 if (!collide){
-                    float coef = vectIncidentNormalise * inte.Norm();
-                    aRet += this->couleur * coef;
+                    aRet += this->couleur * getCoef(vectIncidentNormalise, inte.Norm());
                 }
             }
         }

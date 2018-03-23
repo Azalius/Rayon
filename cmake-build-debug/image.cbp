@@ -154,6 +154,12 @@
 		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/sphere.hpp">
 			<Option target="image"/>
 		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.hpp">
+			<Option target="image"/>
+		</Unit>
 		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/test.cpp">
 			<Option target="image"/>
 		</Unit>

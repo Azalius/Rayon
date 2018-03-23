@@ -117,7 +117,7 @@ Vecteur3D Vecteur3D::Cross(const Vecteur3D & v) const {
 	return res;
 }
 
-Vecteur3D Vecteur3D::Reflechir(const Vecteur3D & n) const { //TODO
+Vecteur3D Vecteur3D::Reflechir(const Vecteur3D & n) const {
 	Vecteur3D res = (*this) - (n * (2 * (n * (*this))));
 	return res;
 }
