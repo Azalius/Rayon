@@ -122,6 +122,33 @@ image/fast:
 	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/build
 .PHONY : image/fast
 
+Scenario.obj: Scenario.cpp.obj
+
+.PHONY : Scenario.obj
+
+# target to build an object file
+Scenario.cpp.obj:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/Scenario.cpp.obj
+.PHONY : Scenario.cpp.obj
+
+Scenario.i: Scenario.cpp.i
+
+.PHONY : Scenario.i
+
+# target to preprocess a source file
+Scenario.cpp.i:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/Scenario.cpp.i
+.PHONY : Scenario.cpp.i
+
+Scenario.s: Scenario.cpp.s
+
+.PHONY : Scenario.s
+
+# target to generate assembly for a file
+Scenario.cpp.s:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/Scenario.cpp.s
+.PHONY : Scenario.cpp.s
+
 bases3d.obj: bases3d.cpp.obj
 
 .PHONY : bases3d.obj
@@ -419,32 +446,32 @@ sphere.cpp.s:
 	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/sphere.cpp.s
 .PHONY : sphere.cpp.s
 
-tests/Scenario.obj: tests/Scenario.cpp.obj
+tests/Cube.obj: tests/Cube.cpp.obj
 
-.PHONY : tests/Scenario.obj
+.PHONY : tests/Cube.obj
 
 # target to build an object file
-tests/Scenario.cpp.obj:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Scenario.cpp.obj
-.PHONY : tests/Scenario.cpp.obj
+tests/Cube.cpp.obj:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Cube.cpp.obj
+.PHONY : tests/Cube.cpp.obj
 
-tests/Scenario.i: tests/Scenario.cpp.i
+tests/Cube.i: tests/Cube.cpp.i
 
-.PHONY : tests/Scenario.i
+.PHONY : tests/Cube.i
 
 # target to preprocess a source file
-tests/Scenario.cpp.i:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Scenario.cpp.i
-.PHONY : tests/Scenario.cpp.i
+tests/Cube.cpp.i:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Cube.cpp.i
+.PHONY : tests/Cube.cpp.i
 
-tests/Scenario.s: tests/Scenario.cpp.s
+tests/Cube.s: tests/Cube.cpp.s
 
-.PHONY : tests/Scenario.s
+.PHONY : tests/Cube.s
 
 # target to generate assembly for a file
-tests/Scenario.cpp.s:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Scenario.cpp.s
-.PHONY : tests/Scenario.cpp.s
+tests/Cube.cpp.s:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Cube.cpp.s
+.PHONY : tests/Cube.cpp.s
 
 tests/test.obj: tests/test.cpp.obj
 
@@ -509,6 +536,9 @@ help:
 	@echo ... image
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Scenario.obj
+	@echo ... Scenario.i
+	@echo ... Scenario.s
 	@echo ... bases3d.obj
 	@echo ... bases3d.i
 	@echo ... bases3d.s
@@ -542,9 +572,9 @@ help:
 	@echo ... sphere.obj
 	@echo ... sphere.i
 	@echo ... sphere.s
-	@echo ... tests/Scenario.obj
-	@echo ... tests/Scenario.i
-	@echo ... tests/Scenario.s
+	@echo ... tests/Cube.obj
+	@echo ... tests/Cube.i
+	@echo ... tests/Cube.s
 	@echo ... tests/test.obj
 	@echo ... tests/test.i
 	@echo ... tests/test.s

@@ -32,6 +32,6 @@ set(SOURCE_FILES
         tests/testVec.cpp
         tests/testVec.hpp
         main.cpp
-        tests/Scenario.cpp tests/Scenario.hpp)
+        Scenario.cpp Scenario.hpp tests/Cube.cpp tests/Cube.hpp)
 
 add_executable(image ${SOURCE_FILES})

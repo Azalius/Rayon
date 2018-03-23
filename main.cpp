@@ -9,7 +9,7 @@
 #include "lumiere.h"
 #include "rayon.hpp"
 #include "objet3D.hpp"
-#include "tests/Scenario.hpp"
+#include "Scenario.hpp"
 
 
 #define TEST true
@@ -20,7 +20,7 @@ int main(void) {
         allTest();
     }
 
-    BaseScenario(1920, 1080).toImage("image.bmp", true, 6);
+    BaseScenario(400, 300).toImage("image.bmp", true, 3);
 
     return 2;
 
