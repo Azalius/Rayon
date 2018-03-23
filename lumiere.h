@@ -49,9 +49,11 @@ public:
 	}
 
 	RVB Illumination(const Rayon &, const Intersection3D &, const Point3D &, Liste<Objet3D> &) const;
+
+	C_Liste_Intersection getIntersection(const Point3D &p, Liste<Objet3D> &lo, const Vecteur3D &vectIncidentNormalise) const;
 };
 
-// Plusieurs lumiéres en 'cube' autour du centre
+// Plusieurs lumiéres en 'cube' autour du centre pour plus de smoothness
 class Lumiere_Smooth: public Lumiere_Ponctuelle {
 protected:
 	//longeur du cube-lumiére

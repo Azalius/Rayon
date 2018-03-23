@@ -18,24 +18,29 @@ RVB Lumiere_Ambiante::Illumination(const Rayon &, const Intersection3D & i, cons
 
 RVB Lumiere_Ponctuelle::Illumination(const Rayon & r, const Intersection3D & i, const Point3D & p, Liste<Objet3D> & lo) const {
     Vecteur3D vectIncident = this->Pos() - p;
-    Vecteur3D vectIncidentNormalise = vectIncident;
-    vectIncidentNormalise.Normaliser();
+    vectIncident.Normaliser();
 
-    Rayon rayon;
-    rayon.Orig(p);
-    rayon.Vect(vectIncidentNormalise);
-    std::cout<<"..."<<std::endl;
-    C_Liste_Intersection li;
-    rayon.Intersections(li, lo);
+    C_Liste_Intersection li = getIntersection(p, lo, vectIncident);
+
     if(!li.Vide()){
         if(li.Premier()->Dist() < vectIncident.Longueur()){
             return RVB(0,0,0);
         }
     }
 
-    float coef = vectIncidentNormalise * i.Norm();
+    float coef = vectIncident* i.Norm();
 
     return  this->couleur * coef;
+}
+
+C_Liste_Intersection
+Lumiere_Ponctuelle::getIntersection(const Point3D &p, Liste<Objet3D> &lo, const Vecteur3D &vectIncidentNormalise) const {
+    Rayon rayon;
+    rayon.Orig(p);
+    rayon.Vect(vectIncidentNormalise);
+    C_Liste_Intersection li;
+    rayon.Intersections(li, lo);
+    return li;
 }
 
 RVB Lumiere_Smooth::Illumination(const Rayon &r, const Intersection3D &inte, const Point3D &p, Liste<Objet3D> &lo) const {
@@ -47,19 +52,15 @@ RVB Lumiere_Smooth::Illumination(const Rayon &r, const Intersection3D &inte, con
     for (int i = 0; i < nbLums ; i++){
         for (int j = 0 ; j<nbLums ; j++){
             for (int k = 0 ; k<nbLums ; k++){
-                Point3D src = corner + Point3D (1, 0, 0) * i + Point3D (0, 1, 0) * j + Point3D (0, 0, 1) * k;
+                Point3D src = corner + Point3D (1, 0, 0) * i*ecart + Point3D (0, 1, 0) * j*ecart + Point3D (0, 0, 1) * k*ecart;
                 bool collide = false;
 
                 Vecteur3D vectIncident = src - p;
                 Vecteur3D vectIncidentNormalise = vectIncident;
                 vectIncidentNormalise.Normaliser();
 
-                Rayon rayon;
-                rayon.Orig(p);
-                rayon.Vect(vectIncidentNormalise);
+                C_Liste_Intersection li = getIntersection(p, lo, vectIncidentNormalise);
 
-                C_Liste_Intersection li;
-                rayon.Intersections(li, lo);
                 if(!li.Vide()){
                     if(li.Premier()->Dist() < vectIncident.Longueur()){
                         collide = true;
@@ -73,6 +74,5 @@ RVB Lumiere_Smooth::Illumination(const Rayon &r, const Intersection3D &inte, con
         }
     }
     return  aRet * (1.0 / (nbLums*nbLums*nbLums));
-
 
 }
