@@ -69,7 +69,7 @@ public:
 	}
 	void Haut(const Vecteur3D &);
 
-	void Calculer_image(Pixelmap, Liste<Objet3D>, Liste<Lumiere>, int, bool b) const;
+	void Calculer_image(Pixelmap &, Liste<Objet3D> &, Liste<Lumiere> &, int, bool b) const;
 };
 
 #endif

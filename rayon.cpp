@@ -21,17 +21,17 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
     RVB refr;
     RVB refl;
 
-	C_Liste_Intersection *lu = new C_Liste_Intersection;
-	this->Intersections(*lu, lo);
+	C_Liste_Intersection lu;
+	this->Intersections(lu, lo);
 
-    if (lu->Vide() || recur == 0){
+    if (lu.Vide() || recur == 0){
         return RVB(0, 0, 0);
     }
-    Objet3D *colObj = lu->Premier()->Objt();
+    Objet3D *colObj = lu.Premier()->Objt();
 
     //Appel recursif sur la premiére intersection
 
-    Vecteur3D norm = lu->Premier()->Norm();
+    Vecteur3D norm = lu.Premier()->Norm();
     norm.Normaliser();
     Vecteur3D vecReflechi = this->Vect().Reflechir(norm);
     vecReflechi.Normaliser();
@@ -50,10 +50,10 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
     Lumiere *enCours = ll.Premier();
     RVB ilumDirect = RVB();
     for (int i = 0 ; i < ll.Nb_item() ; i++){
-        ilumDirect += enCours->Illumination(*this, *lu->Premier(), colObj->interPoint(*this), lo);
+        ilumDirect += enCours->Illumination(*this, *lu.Premier(), colObj->interPoint(*this), lo);
         enCours = ll.Suivant();
     }
     //ilumDirect.Borner(0.0, 0.8);
-	return ilumDirect*colObj->Couleur()+ refl; //+refl;
+	return ilumDirect*colObj->Couleur()+ refl + refr;
 }
 

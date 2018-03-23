@@ -12,21 +12,20 @@
 #include "tests/Scenario.hpp"
 
 
-#define TEST false
+#define TEST true
 
 
 int main(void) {
+    if (TEST){
+        allTest();
+    }
 
-	if (TEST){
-		allTest();
-	}
+    BaseScenario(1920, 1080).toImage("image.bmp", true, 6);
 
-	BaseScenario(300, 200).toImage("image.bmp", false, 3);
+    return 2;
 
-
-
-	return 0;
 }
+
 
 
 

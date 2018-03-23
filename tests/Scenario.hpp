@@ -20,7 +20,7 @@ protected:
 
 public:
 
-    ObjectScenario(){
+    ObjectScenario() {
 
     }
     const Liste<Lumiere> getLums() const {
@@ -62,12 +62,10 @@ public:
     const Camera getCam() const {
         return cam;
     }
-    ObjectScenario(const Liste<Lumiere> &lums, const Liste<Objet3D> &objs, int hauteur, int largeur, const Camera &cam){
-        this->lums = lums;
-        this->objs=objs;
+    ObjectScenario(int hauteur, int largeur, Camera &cam, Liste<Lumiere> &lums, Liste<Objet3D> &objs)
+            : cam(cam), lums(lums), objs(objs) {
         this->hauteur =hauteur;
         this->largeur = largeur;
-        this->cam = cam;
     }
 
     void toImage(char *path, bool outputText, int complexite);

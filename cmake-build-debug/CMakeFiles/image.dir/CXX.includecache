@@ -125,6 +125,8 @@ rayon.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
 objet3D.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp
+tests/Scenario.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.hpp
 
 C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp
 couleurRVB.hpp
@@ -211,6 +213,24 @@ intersection.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/intersection.hpp
 objet3D.hpp
 C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp
+
+C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.cpp
+Scenario.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.hpp
+../plan.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/plan.hpp
+../sphere.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/sphere.hpp
+
+C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.hpp
+iostream
+-
+string
+-
+../lumiere.h
+C:/Users/Azalius/Documents/Cours/Image/image/lumiere.h
+../camera.hpp
+C:/Users/Azalius/Documents/Cours/Image/image/camera.hpp
 
 C:/Users/Azalius/Documents/Cours/Image/image/tests/test.cpp
 iostream

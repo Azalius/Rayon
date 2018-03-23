@@ -55,6 +55,7 @@ CMakeFiles/image.dir/main.cpp.obj: ../pixelmap.hpp
 CMakeFiles/image.dir/main.cpp.obj: ../plan.hpp
 CMakeFiles/image.dir/main.cpp.obj: ../rayon.hpp
 CMakeFiles/image.dir/main.cpp.obj: ../sphere.hpp
+CMakeFiles/image.dir/main.cpp.obj: ../tests/Scenario.hpp
 CMakeFiles/image.dir/main.cpp.obj: ../tests/test.hpp
 
 CMakeFiles/image.dir/pixelmap.cpp.obj: ../bases3d.hpp
@@ -94,6 +95,22 @@ CMakeFiles/image.dir/sphere.cpp.obj: ../objet3D.hpp
 CMakeFiles/image.dir/sphere.cpp.obj: ../rayon.hpp
 CMakeFiles/image.dir/sphere.cpp.obj: ../sphere.cpp
 CMakeFiles/image.dir/sphere.cpp.obj: ../sphere.hpp
+
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../bases3d.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../bitmap.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../camera.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../const.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../couleurRVB.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../intersection.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../liste.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../lumiere.h
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../objet3D.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../pixelmap.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../plan.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../rayon.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../sphere.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../tests/Scenario.cpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj: ../tests/Scenario.hpp
 
 CMakeFiles/image.dir/tests/test.cpp.obj: ../tests/test.cpp
 CMakeFiles/image.dir/tests/test.cpp.obj: ../tests/testVec.hpp

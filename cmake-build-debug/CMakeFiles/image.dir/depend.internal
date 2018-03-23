@@ -56,6 +56,7 @@ CMakeFiles/image.dir/main.cpp.obj
  C:/Users/Azalius/Documents/Cours/Image/image/plan.hpp
  C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
  C:/Users/Azalius/Documents/Cours/Image/image/sphere.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.hpp
  C:/Users/Azalius/Documents/Cours/Image/image/tests/test.hpp
 CMakeFiles/image.dir/pixelmap.cpp.obj
  C:/Users/Azalius/Documents/Cours/Image/image/bases3d.hpp
@@ -95,6 +96,22 @@ CMakeFiles/image.dir/sphere.cpp.obj
  C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
  C:/Users/Azalius/Documents/Cours/Image/image/sphere.cpp
  C:/Users/Azalius/Documents/Cours/Image/image/sphere.hpp
+CMakeFiles/image.dir/tests/Scenario.cpp.obj
+ C:/Users/Azalius/Documents/Cours/Image/image/bases3d.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/bitmap.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/camera.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/const.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/couleurRVB.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/intersection.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/liste.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/lumiere.h
+ C:/Users/Azalius/Documents/Cours/Image/image/objet3D.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/pixelmap.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/plan.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/rayon.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/sphere.hpp
+ C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.cpp
+ C:/Users/Azalius/Documents/Cours/Image/image/tests/Scenario.hpp
 CMakeFiles/image.dir/tests/test.cpp.obj
  C:/Users/Azalius/Documents/Cours/Image/image/tests/test.cpp
  C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.hpp
