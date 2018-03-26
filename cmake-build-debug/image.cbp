@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/Cube.cpp">
+			<Option target="image"/>
+		</Unit>
+		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/Cube.hpp">
+			<Option target="image"/>
+		</Unit>
 		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/Scenario.cpp">
 			<Option target="image"/>
 		</Unit>
@@ -158,12 +164,6 @@
 			<Option target="image"/>
 		</Unit>
 		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/sphere.hpp">
-			<Option target="image"/>
-		</Unit>
-		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/Cube.cpp">
-			<Option target="image"/>
-		</Unit>
-		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/Cube.hpp">
 			<Option target="image"/>
 		</Unit>
 		<Unit filename="C:/Users/Azalius/Documents/Cours/Image/image/tests/test.cpp">

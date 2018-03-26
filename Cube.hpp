@@ -6,7 +6,7 @@
 #define IMAGE_CUBE_HPP
 
 
-#include "../objet3D.hpp"
+#include "objet3D.hpp"
 
 class Cube : public Objet3D {
 

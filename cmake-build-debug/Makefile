@@ -122,6 +122,33 @@ image/fast:
 	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/build
 .PHONY : image/fast
 
+Cube.obj: Cube.cpp.obj
+
+.PHONY : Cube.obj
+
+# target to build an object file
+Cube.cpp.obj:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/Cube.cpp.obj
+.PHONY : Cube.cpp.obj
+
+Cube.i: Cube.cpp.i
+
+.PHONY : Cube.i
+
+# target to preprocess a source file
+Cube.cpp.i:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/Cube.cpp.i
+.PHONY : Cube.cpp.i
+
+Cube.s: Cube.cpp.s
+
+.PHONY : Cube.s
+
+# target to generate assembly for a file
+Cube.cpp.s:
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/Cube.cpp.s
+.PHONY : Cube.cpp.s
+
 Scenario.obj: Scenario.cpp.obj
 
 .PHONY : Scenario.obj
@@ -446,33 +473,6 @@ sphere.cpp.s:
 	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/sphere.cpp.s
 .PHONY : sphere.cpp.s
 
-tests/Cube.obj: tests/Cube.cpp.obj
-
-.PHONY : tests/Cube.obj
-
-# target to build an object file
-tests/Cube.cpp.obj:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Cube.cpp.obj
-.PHONY : tests/Cube.cpp.obj
-
-tests/Cube.i: tests/Cube.cpp.i
-
-.PHONY : tests/Cube.i
-
-# target to preprocess a source file
-tests/Cube.cpp.i:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Cube.cpp.i
-.PHONY : tests/Cube.cpp.i
-
-tests/Cube.s: tests/Cube.cpp.s
-
-.PHONY : tests/Cube.s
-
-# target to generate assembly for a file
-tests/Cube.cpp.s:
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Cube.cpp.s
-.PHONY : tests/Cube.cpp.s
-
 tests/test.obj: tests/test.cpp.obj
 
 .PHONY : tests/test.obj
@@ -536,6 +536,9 @@ help:
 	@echo ... image
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Cube.obj
+	@echo ... Cube.i
+	@echo ... Cube.s
 	@echo ... Scenario.obj
 	@echo ... Scenario.i
 	@echo ... Scenario.s
@@ -572,9 +575,6 @@ help:
 	@echo ... sphere.obj
 	@echo ... sphere.i
 	@echo ... sphere.s
-	@echo ... tests/Cube.obj
-	@echo ... tests/Cube.i
-	@echo ... tests/Cube.s
 	@echo ... tests/test.obj
 	@echo ... tests/test.i
 	@echo ... tests/test.s

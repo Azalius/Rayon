@@ -392,28 +392,28 @@ CMakeFiles/image.dir/Scenario.cpp.obj.provides: CMakeFiles/image.dir/Scenario.cp
 CMakeFiles/image.dir/Scenario.cpp.obj.provides.build: CMakeFiles/image.dir/Scenario.cpp.obj
 
 
-CMakeFiles/image.dir/tests/Cube.cpp.obj: CMakeFiles/image.dir/flags.make
-CMakeFiles/image.dir/tests/Cube.cpp.obj: ../tests/Cube.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Azalius\Documents\Cours\Image\image\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/image.dir/tests/Cube.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\image.dir\tests\Cube.cpp.obj -c C:\Users\Azalius\Documents\Cours\Image\image\tests\Cube.cpp
+CMakeFiles/image.dir/Cube.cpp.obj: CMakeFiles/image.dir/flags.make
+CMakeFiles/image.dir/Cube.cpp.obj: ../Cube.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Azalius\Documents\Cours\Image\image\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/image.dir/Cube.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\image.dir\Cube.cpp.obj -c C:\Users\Azalius\Documents\Cours\Image\image\Cube.cpp
 
-CMakeFiles/image.dir/tests/Cube.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/tests/Cube.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Azalius\Documents\Cours\Image\image\tests\Cube.cpp > CMakeFiles\image.dir\tests\Cube.cpp.i
+CMakeFiles/image.dir/Cube.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/Cube.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Azalius\Documents\Cours\Image\image\Cube.cpp > CMakeFiles\image.dir\Cube.cpp.i
 
-CMakeFiles/image.dir/tests/Cube.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/tests/Cube.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Azalius\Documents\Cours\Image\image\tests\Cube.cpp -o CMakeFiles\image.dir\tests\Cube.cpp.s
+CMakeFiles/image.dir/Cube.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/Cube.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Azalius\Documents\Cours\Image\image\Cube.cpp -o CMakeFiles\image.dir\Cube.cpp.s
 
-CMakeFiles/image.dir/tests/Cube.cpp.obj.requires:
+CMakeFiles/image.dir/Cube.cpp.obj.requires:
 
-.PHONY : CMakeFiles/image.dir/tests/Cube.cpp.obj.requires
+.PHONY : CMakeFiles/image.dir/Cube.cpp.obj.requires
 
-CMakeFiles/image.dir/tests/Cube.cpp.obj.provides: CMakeFiles/image.dir/tests/Cube.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/tests/Cube.cpp.obj.provides.build
-.PHONY : CMakeFiles/image.dir/tests/Cube.cpp.obj.provides
+CMakeFiles/image.dir/Cube.cpp.obj.provides: CMakeFiles/image.dir/Cube.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\image.dir\build.make CMakeFiles/image.dir/Cube.cpp.obj.provides.build
+.PHONY : CMakeFiles/image.dir/Cube.cpp.obj.provides
 
-CMakeFiles/image.dir/tests/Cube.cpp.obj.provides.build: CMakeFiles/image.dir/tests/Cube.cpp.obj
+CMakeFiles/image.dir/Cube.cpp.obj.provides.build: CMakeFiles/image.dir/Cube.cpp.obj
 
 
 # Object files for target image
@@ -432,7 +432,7 @@ image_OBJECTS = \
 "CMakeFiles/image.dir/tests/testVec.cpp.obj" \
 "CMakeFiles/image.dir/main.cpp.obj" \
 "CMakeFiles/image.dir/Scenario.cpp.obj" \
-"CMakeFiles/image.dir/tests/Cube.cpp.obj"
+"CMakeFiles/image.dir/Cube.cpp.obj"
 
 # External object files for target image
 image_EXTERNAL_OBJECTS =
@@ -451,7 +451,7 @@ image.exe: CMakeFiles/image.dir/tests/test.cpp.obj
 image.exe: CMakeFiles/image.dir/tests/testVec.cpp.obj
 image.exe: CMakeFiles/image.dir/main.cpp.obj
 image.exe: CMakeFiles/image.dir/Scenario.cpp.obj
-image.exe: CMakeFiles/image.dir/tests/Cube.cpp.obj
+image.exe: CMakeFiles/image.dir/Cube.cpp.obj
 image.exe: CMakeFiles/image.dir/build.make
 image.exe: CMakeFiles/image.dir/linklibs.rsp
 image.exe: CMakeFiles/image.dir/objects1.rsp
@@ -478,7 +478,7 @@ CMakeFiles/image.dir/requires: CMakeFiles/image.dir/tests/test.cpp.obj.requires
 CMakeFiles/image.dir/requires: CMakeFiles/image.dir/tests/testVec.cpp.obj.requires
 CMakeFiles/image.dir/requires: CMakeFiles/image.dir/main.cpp.obj.requires
 CMakeFiles/image.dir/requires: CMakeFiles/image.dir/Scenario.cpp.obj.requires
-CMakeFiles/image.dir/requires: CMakeFiles/image.dir/tests/Cube.cpp.obj.requires
+CMakeFiles/image.dir/requires: CMakeFiles/image.dir/Cube.cpp.obj.requires
 
 .PHONY : CMakeFiles/image.dir/requires
 

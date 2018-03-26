@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Azalius/Documents/Cours/Image/image/Cube.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/Cube.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/Scenario.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/Scenario.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/bases3d.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/bases3d.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/bitmap.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/bitmap.cpp.obj"
@@ -16,7 +17,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Azalius/Documents/Cours/Image/image/plan.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/plan.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/rayon.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/rayon.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/sphere.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/sphere.cpp.obj"
-  "C:/Users/Azalius/Documents/Cours/Image/image/tests/Cube.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/tests/Cube.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/tests/test.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/tests/test.cpp.obj"
   "C:/Users/Azalius/Documents/Cours/Image/image/tests/testVec.cpp" "C:/Users/Azalius/Documents/Cours/Image/image/cmake-build-debug/CMakeFiles/image.dir/tests/testVec.cpp.obj"
   )

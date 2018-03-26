@@ -13,7 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/image.dir/tests/testVec.cpp.obj"
   "CMakeFiles/image.dir/main.cpp.obj"
   "CMakeFiles/image.dir/Scenario.cpp.obj"
-  "CMakeFiles/image.dir/tests/Cube.cpp.obj"
+  "CMakeFiles/image.dir/Cube.cpp.obj"
   "image.pdb"
   "image.exe"
   "image.exe.manifest"
