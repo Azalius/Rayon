@@ -123,12 +123,35 @@ Vecteur3D Vecteur3D::Reflechir(const Vecteur3D & n) const {
 }
 
 
-Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const {
-	float T1 = acos((*this * norm) / (Longueur() * norm.Longueur()));
-	float T2 = asin((m1*sin(T1))/m2);
+Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const { // TODO
 
-	return norm * cos(T2) + (norm * cos(T1) - (*this)) * (1/sin(T1))* sin(T2);
+	Vecteur3D c1;
+	Vecteur3D c2;
+	Vecteur3D n = Vecteur3D(norm.X(), norm.Y(), norm.Z());
+	float newAngle;
+	float sinNewAngle;
 
+	if (n*(*this) > 0){
+		n = -n;
+	}
+
+	float coef = m1/m2;
+	float oldAngle = acos(((*this)*n)/(Longueur()*n.Longueur())); // signe?
+
+	sinNewAngle = sin(oldAngle) / coef;
+	if (sinNewAngle > 1.0){ // refraction totale, mb?
+		//return Vecteur3D(0,0,0);
+	}
+	newAngle = asin(sinNewAngle);
+
+	//OK jusque la
+	Vecteur3D self = Vecteur3D(x, y, z);
+	self.Normaliser();
+	n.Normaliser();
+	c1 = (self+n*(1/sin(oldAngle)))*sin(newAngle);
+	c2 = -n*cos(newAngle);
+
+	return c1 + c2;
 }
 
 

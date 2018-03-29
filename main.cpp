@@ -11,7 +11,7 @@ int main(void) {
         allTest();
     }
 
-    BaseScenario(1920, 1080).toImage("image3.bmp", false, 4);
+    BaseScenario(400, 320).toImage("image4.bmp", true, 4);
 
     return 0;
 
