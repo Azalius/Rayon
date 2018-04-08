@@ -41,7 +41,7 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
 
     Vecteur3D vecRefracte = this->Vect().Refracter(norm, colObj->Milieu1(), colObj->Milieu2());
     vecRefracte.Normaliser();
-    Rayon refracte = Rayon(colObj->interPoint(*this), vecRefracte, colObj->Milieu1());
+    Rayon refracte = Rayon(colObj->interPoint(*this), vecRefracte, colObj->Milieu2());
     refr = refracte.Lancer(lo, ll, recur - 1) * colObj->Kt();
     //std::cout<<"Rayon refracte : "<<refracte.Vect().X()<<" "<<refracte.Vect().Y()<<" "<<refracte.Vect().Z() <<std::endl;
 

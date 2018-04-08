@@ -75,5 +75,9 @@ class BaseScenario : public ObjectScenario{
 public:
     BaseScenario(int hauteur, int largeur);
 };
+class LineScenario : public ObjectScenario{
+public:
+    LineScenario(int hauteur, int largeur);
+};
 
 #endif //IMAGE_SCENARIO_HPP

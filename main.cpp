@@ -11,7 +11,8 @@ int main(void) {
         allTest();
     }
 
-    BaseScenario(400, 320).toImage("image4.bmp", true, 4);
+    //BaseScenario(400, 320).toImage("image4.bmp", true, 4);
+    LineScenario(300, 220).toImage("image5.bmp", true, 6);
 
     return 0;
 

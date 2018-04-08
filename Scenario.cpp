@@ -101,3 +101,56 @@ void ObjectScenario::toImage(char *path, bool outputText, int complexite) {
         this->cam = *cam;
 
     }
+LineScenario::LineScenario(int largeur, int hauteur) {
+    this->hauteur = hauteur;
+    this->largeur =largeur;
+
+    this->objs = Liste<Objet3D>();
+
+    // Initialisation des lumieres
+    Lumiere_Ambiante *ambiante = new Lumiere_Ambiante;
+    ambiante->Couleur(RVB(0.05, 0.0, 0.0));
+    this->lums.Ajouter(ambiante);
+
+    Lumiere_Ponctuelle *ponctuelle = new Lumiere_Ponctuelle();
+    ponctuelle->Couleur(RVB(0.2, 0.4, 0.4));
+    ponctuelle->Pos(Point3D(20, 40, -10));
+    this->lums.Ajouter(ponctuelle);
+
+    Lumiere_Ponctuelle *ponct = new Lumiere_Ponctuelle();
+    ponct->Couleur(RVB(0.4, 0.2, 0.2));
+    ponct->Pos(Point3D(20, 40, 10));
+    this->lums.Ajouter(ponct);
+
+
+
+    // Initialisation des objets==============================
+
+
+
+    // La grosse sphere
+    Sphere *spher2 = new Sphere;
+    spher2->Centre(Point3D(-1, 3, 0.5));
+    spher2->SphereRayon(2);
+    spher2->Couleur(RVB(0.3, 0.3, 0.3));
+    spher2->Reflexion(0.75);
+    this->objs.Ajouter(spher2);
+
+
+    // Le plan horizontal : le sol
+    Plan *sol = new Plan();
+    sol->depuisVetP(Vecteur3D(0, 1, 0), Point3D(0, 0, 0));
+    sol->Couleur(RVB(1, 1, 1));
+    sol->Reflexion(0.6);
+    this->objs.Ajouter(sol);
+
+    // la Camera
+    Camera *cam = new Camera();
+    cam->Centre(Point3D(0, 5, 12));
+    cam->Dir(Point3D(0, 1, 0));
+    cam->Haut(Vecteur3D(0, 1, 0));
+    cam->Largeur((5.6 * this->largeur) / this->hauteur);
+    cam->Hauteur(5.6);
+    this->cam = *cam;
+
+}
